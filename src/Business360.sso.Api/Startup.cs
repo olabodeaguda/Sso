@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Business360.sso.Api.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +27,8 @@ namespace Business360.sso.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.SSoConfiguration(Configuration);
+            services.AddDatabaseConfiguration(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,12 +39,11 @@ namespace Business360.sso.Api
                 app.UseDeveloperExceptionPage();
             }
 
+
+            app.UseIdentityServer();
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
