@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Business360.sso.Data.Entities
 {
-    public class Client
+    public class SsoClient
     {
         public string ClientData { get; set; }
 

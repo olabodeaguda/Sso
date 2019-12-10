@@ -16,19 +16,30 @@ namespace Business360.sso.Api
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             Configuration = configuration;
+            _environment = env;
         }
 
         public IConfiguration Configuration { get; }
+        private readonly IWebHostEnvironment _environment;
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
-            services.SSoConfiguration(Configuration);
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder => builder.WithOrigins("*")
+                        .WithHeaders("*")
+                        .WithMethods("*")
+                        .WithExposedHeaders("*"));
+            });
+            services.SSoConfiguration(Configuration, _environment);
             services.AddDatabaseConfiguration(Configuration);
+
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +51,8 @@ namespace Business360.sso.Api
             }
 
 
+            app.UseCors("AllowSpecificOrigin");
+            app.UseStaticFiles();
             app.UseIdentityServer();
             app.UseHttpsRedirection();
             app.UseRouting();

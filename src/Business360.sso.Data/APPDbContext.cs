@@ -19,14 +19,14 @@ namespace Business360.sso.Data
         }
 
         public DbSet<ApiResource> ApiResources { get; set; }
-        public DbSet<Client> Clients { get; set; }
+        public DbSet<SsoClient> Clients { get; set; }
         public DbSet<IdentityResource> IdentityResources { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
 
-            builder.Entity<Client>().HasKey(m => m.ClientId);
+            builder.Entity<SsoClient>().HasKey(m => m.ClientId);
             builder.Entity<ApiResource>().HasKey(m => m.ApiResourceName);
             builder.Entity<IdentityResource>().HasKey(m => m.IdentityResourceName);
             

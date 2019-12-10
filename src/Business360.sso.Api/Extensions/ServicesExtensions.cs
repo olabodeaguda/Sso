@@ -4,10 +4,6 @@ using Business360.sso.Infrastructure.Services;
 using IdentityServer4.Stores;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Business360.sso.Api.Extensions
 {
@@ -17,8 +13,8 @@ namespace Business360.sso.Api.Extensions
         {
             //services
             services.AddScoped<IHttpAccessorService, HttpAccessorService>();
-            services.AddTransient<IClientStore, ClientStore>();
-            services.AddTransient<IResourceStore, ResourceStore>();
+            services.AddTransient<IdentityServer4.Stores.IClientStore, ClientStore>();
+            services.AddTransient<IdentityServer4.Stores.IResourceStore, ResourceStore>();
 
 
         }
