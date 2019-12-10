@@ -1,7 +1,9 @@
 ﻿using Business360.sso.Data;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +33,26 @@ namespace Business360.sso.Api.Extensions
                 });
 
             services.AddTransient<DbContext, APPDbContext>();
+        }
+
+        public static IHost DbMigration(this IHost host)
+        {
+            using (var scope = host.Services.CreateScope())
+            {
+                try
+                {
+                    var context = scope.ServiceProvider.GetRequiredService<APPDbContext>();
+                    context.Database.Migrate();
+
+                    var context1 = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+                    context1.Database.Migrate();
+                }
+                catch (Exception ex)
+                {
+                    //Log.Error(ex);
+                }
+            }
+            return host;
         }
     }
 }

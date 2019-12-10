@@ -16,8 +16,4 @@
     <ProjectReference Include="..\Business360.sso.Core\Business360.sso.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
-
 </Project>

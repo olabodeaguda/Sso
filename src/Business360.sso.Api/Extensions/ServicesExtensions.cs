@@ -13,8 +13,8 @@ namespace Business360.sso.Api.Extensions
         {
             //services
             services.AddScoped<IHttpAccessorService, HttpAccessorService>();
-            services.AddTransient<IdentityServer4.Stores.IClientStore, ClientStore>();
-            services.AddTransient<IdentityServer4.Stores.IResourceStore, ResourceStore>();
+            services.AddTransient<IClientStore, ClientStore>();
+            services.AddTransient<IResourceStore, ResourceStore>();
 
 
         }

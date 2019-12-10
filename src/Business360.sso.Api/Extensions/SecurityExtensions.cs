@@ -27,8 +27,6 @@ namespace Business360.sso.Api.Extensions
               .AddClientStore<ClientStore>()
               .AddAspNetIdentity<ApplicationUser>()
               .AddProfileService<IdentityWithAdditionalClaimsProfileService>();
-
-
         }
     }
 }
