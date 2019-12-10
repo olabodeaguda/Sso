@@ -1,5 +1,7 @@
 ﻿using Business360.sso.Core.Interfaces.Services;
+using Business360.sso.Data.Repositories;
 using Business360.sso.Infrastructure.Services;
+using IdentityServer4.Stores;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -13,7 +15,12 @@ namespace Business360.sso.Api.Extensions
     {
         public static void AppServicesConfiguration(this IServiceCollection services, IConfiguration configuration)
         {
+            //services
             services.AddScoped<IHttpAccessorService, HttpAccessorService>();
+            services.AddTransient<IClientStore, ClientStore>();
+            services.AddTransient<IResourceStore, ResourceStore>();
+
+
         }
     }
 }

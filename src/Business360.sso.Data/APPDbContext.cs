@@ -8,25 +8,28 @@ using System.Text;
 
 namespace Business360.sso.Data
 {
-    public class APPContext : DbContext
+    public class APPDbContext : DbContext
     {
         private readonly IHttpAccessorService _httpContextAccessor;
 
-        public APPContext(DbContextOptions<APPContext> options)
+        public APPDbContext(DbContextOptions<APPDbContext> options)
          : base(options)
         {
             _httpContextAccessor = (IHttpAccessorService)this.GetInfrastructure().GetService(typeof(IHttpAccessorService)); ;
         }
 
-        public DbSet<SsoApi> SsoApis { get; set; }
-        public DbSet<SsoClaim> SsoClaims { get; set; }
-        public DbSet<SsoScope> SsoScopes { get; set; }
+        public DbSet<ApiResource> ApiResources { get; set; }
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<IdentityResource> IdentityResources { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
 
-
+            builder.Entity<Client>().HasKey(m => m.ClientId);
+            builder.Entity<ApiResource>().HasKey(m => m.ApiResourceName);
+            builder.Entity<IdentityResource>().HasKey(m => m.IdentityResourceName);
+            
             FilterQuery(builder);
         }
 

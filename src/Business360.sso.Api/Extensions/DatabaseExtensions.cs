@@ -16,13 +16,13 @@ namespace Business360.sso.Api.Extensions
             var connectionstring = configuration.GetConnectionString("DefaultConnection");
 
             services.AddEntityFrameworkNpgsql()
-                .AddDbContextPool<APPContext>((serviceProvider, optionsBuilder) =>
+                .AddDbContextPool<APPDbContext>((serviceProvider, optionsBuilder) =>
                 {
                     optionsBuilder.UseNpgsql(connectionstring).EnableSensitiveDataLogging();
                     optionsBuilder.UseInternalServiceProvider(serviceProvider);
                 });
 
-            services.AddTransient<DbContext, APPContext>();
+            services.AddTransient<DbContext, APPDbContext>();
         }
     }
 }
