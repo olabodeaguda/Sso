@@ -16,7 +16,7 @@ namespace Business360.sso.Api.Extensions
         public static void SSoConfiguration(this IServiceCollection services,
             IConfiguration configuration, IWebHostEnvironment _environment)
         {
-            var cert = new X509Certificate2(Path.Combine(_environment.ContentRootPath, "b360.pfx"), "@Olabode.123");
+            var cert = new X509Certificate2(Path.Combine(_environment.ContentRootPath, "b360.pfx"), configuration.GetValue<string>("CertPassword"));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<APPDbContext>();
