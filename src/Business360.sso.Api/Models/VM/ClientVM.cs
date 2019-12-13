@@ -18,6 +18,5 @@ namespace Business360.sso.Api.Models.Views
         public bool AllowAccessTokensViaBrowser { get; set; }
         public string RedirectUris { get; set; }
         public string PostLogoutRedirectUris { get; set; }
-
     }
 }
