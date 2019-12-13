@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Business360.sso.Data.IdentityServer\Business360.sso.Data.IdentityServer.csproj" />
     <ProjectReference Include="..\Business360.sso.Data\Business360.sso.Data.csproj" />
-    <ProjectReference Include="..\Business360.sso.IdentityServer\Business360.sso.IdentityServer.csproj" />
     <ProjectReference Include="..\Business360.sso.Infrastructure\Business360.sso.Infrastructure.csproj" />
   </ItemGroup>
 
