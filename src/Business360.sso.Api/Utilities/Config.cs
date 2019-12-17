@@ -29,14 +29,13 @@ namespace Business360.sso.Api.Utilities
                 {
                     ClientId = "business360sso",
                     ClientName = "Business360 SSO",
-                     AllowedGrantTypes = GrantTypes.ClientCredentials,
-                ClientSecrets = new List<Secret> {
-                    new Secret("ab163299-a1ec-49fe-a550-77ef75e0e15a".Sha256())},
-
+                    AllowedGrantTypes = GrantTypes.ClientCredentials,
+                    ClientSecrets = new List<Secret> {
+                        new Secret("ab163299-a1ec-49fe-a550-77ef75e0e15a".Sha256())
+                    },
                     RedirectUris =           { "http://localhost:5000" },
                     PostLogoutRedirectUris = { "http://localhost:5000" },
                     AllowedCorsOrigins =     { "http://localhost:5000" },
-
                     AllowedScopes =
                     {
                         IdentityServerConstants.StandardScopes.OpenId,

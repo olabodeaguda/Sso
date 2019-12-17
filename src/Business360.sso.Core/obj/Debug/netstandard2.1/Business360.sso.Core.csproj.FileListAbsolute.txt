@@ -1,0 +1,7 @@
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Core\bin\Debug\netstandard2.1\Business360.sso.Core.deps.json
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Core\bin\Debug\netstandard2.1\Business360.sso.Core.dll
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Core\bin\Debug\netstandard2.1\Business360.sso.Core.pdb
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Core\obj\Debug\netstandard2.1\Business360.sso.Core.AssemblyInfoInputs.cache
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Core\obj\Debug\netstandard2.1\Business360.sso.Core.AssemblyInfo.cs
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Core\obj\Debug\netstandard2.1\Business360.sso.Core.dll
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Core\obj\Debug\netstandard2.1\Business360.sso.Core.pdb

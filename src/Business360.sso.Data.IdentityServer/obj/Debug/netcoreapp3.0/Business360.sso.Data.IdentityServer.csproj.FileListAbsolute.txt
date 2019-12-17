@@ -1,0 +1,11 @@
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Data.IdentityServer\bin\Debug\netcoreapp3.0\Business360.sso.Data.IdentityServer.deps.json
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Data.IdentityServer\bin\Debug\netcoreapp3.0\Business360.sso.Data.IdentityServer.dll
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Data.IdentityServer\bin\Debug\netcoreapp3.0\Business360.sso.Data.IdentityServer.pdb
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Data.IdentityServer\bin\Debug\netcoreapp3.0\Business360.sso.Core.dll
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Data.IdentityServer\bin\Debug\netcoreapp3.0\Business360.sso.Core.pdb
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Data.IdentityServer\obj\Debug\netcoreapp3.0\Business360.sso.Data.IdentityServer.csprojAssemblyReference.cache
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Data.IdentityServer\obj\Debug\netcoreapp3.0\Business360.sso.Data.IdentityServer.AssemblyInfoInputs.cache
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Data.IdentityServer\obj\Debug\netcoreapp3.0\Business360.sso.Data.IdentityServer.AssemblyInfo.cs
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Data.IdentityServer\obj\Debug\netcoreapp3.0\Business360.sso.Data.IdentityServer.csproj.CopyComplete
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Data.IdentityServer\obj\Debug\netcoreapp3.0\Business360.sso.Data.IdentityServer.dll
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Data.IdentityServer\obj\Debug\netcoreapp3.0\Business360.sso.Data.IdentityServer.pdb

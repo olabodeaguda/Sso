@@ -1,0 +1,13 @@
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Infrastructure\obj\Debug\netstandard2.1\Business360.sso.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Infrastructure\obj\Debug\netstandard2.1\Business360.sso.Infrastructure.AssemblyInfo.cs
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Infrastructure\bin\Debug\netstandard2.1\Business360.sso.Infrastructure.deps.json
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Infrastructure\bin\Debug\netstandard2.1\Business360.sso.Infrastructure.dll
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Infrastructure\bin\Debug\netstandard2.1\Business360.sso.Infrastructure.pdb
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Infrastructure\bin\Debug\netstandard2.1\Business360.sso.Core.dll
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Infrastructure\bin\Debug\netstandard2.1\Business360.sso.Data.dll
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Infrastructure\bin\Debug\netstandard2.1\Business360.sso.Core.pdb
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Infrastructure\bin\Debug\netstandard2.1\Business360.sso.Data.pdb
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Infrastructure\obj\Debug\netstandard2.1\Business360.sso.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Infrastructure\obj\Debug\netstandard2.1\Business360.sso.Infrastructure.csproj.CopyComplete
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Infrastructure\obj\Debug\netstandard2.1\Business360.sso.Infrastructure.dll
+C:\Users\Olabode.aguda\source\repos\Business360.sso\src\Business360.sso.Infrastructure\obj\Debug\netstandard2.1\Business360.sso.Infrastructure.pdb

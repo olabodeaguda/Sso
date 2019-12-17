@@ -1,0 +1,145 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Olabode.aguda\\source\\repos\\Business360.sso\\src\\Business360.sso.Data.IdentityServer\\Business360.sso.Data.IdentityServer.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Olabode.aguda\\source\\repos\\Business360.sso\\src\\Business360.sso.Core\\Business360.sso.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Olabode.aguda\\source\\repos\\Business360.sso\\src\\Business360.sso.Core\\Business360.sso.Core.csproj",
+        "projectName": "Business360.sso.Core",
+        "projectPath": "C:\\Users\\Olabode.aguda\\source\\repos\\Business360.sso\\src\\Business360.sso.Core\\Business360.sso.Core.csproj",
+        "packagesPath": "C:\\Users\\Olabode.aguda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Olabode.aguda\\source\\repos\\Business360.sso\\src\\Business360.sso.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Olabode.aguda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Olabode.aguda\\source\\repos\\Business360.sso\\src\\Business360.sso.Data.IdentityServer\\Business360.sso.Data.IdentityServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Olabode.aguda\\source\\repos\\Business360.sso\\src\\Business360.sso.Data.IdentityServer\\Business360.sso.Data.IdentityServer.csproj",
+        "projectName": "Business360.sso.Data.IdentityServer",
+        "projectPath": "C:\\Users\\Olabode.aguda\\source\\repos\\Business360.sso\\src\\Business360.sso.Data.IdentityServer\\Business360.sso.Data.IdentityServer.csproj",
+        "packagesPath": "C:\\Users\\Olabode.aguda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Olabode.aguda\\source\\repos\\Business360.sso\\src\\Business360.sso.Data.IdentityServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Olabode.aguda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\Olabode.aguda\\source\\repos\\Business360.sso\\src\\Business360.sso.Core\\Business360.sso.Core.csproj": {
+                "projectPath": "C:\\Users\\Olabode.aguda\\source\\repos\\Business360.sso\\src\\Business360.sso.Core\\Business360.sso.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "IdentityServer4": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "IdentityServer4.AspNetIdentity": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "IdentityServer4.EntityFramework": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
